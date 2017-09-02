@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/preventScrolling.js"></script>
+    <script type="text/javascript" src="js/bitcoinPriceScraper.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <meta name="KEYWORDS" content="bitcoin,prezzo,btc,euro,valore,crypto,cryptocurrency">
+    <meta name="Description" content="Prezzo dei Bitcoin in Euro in tempo reale">
+    <meta name="robots" content="index">
+
+    <title>Prezzo Bitcoin in EUR - Bitcoinprezzo.it</title>
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="center" class="bold">
+        <div class="loader"></div>
+    </div>
+
+    <div id="footer">
+        <div id="email" class="footerText">info@bitcoinprezzo.it</div>
+        <div id="donazioni" class="footerText">1775nGffckphLVLtebKRwzoA3BFM5vsAo4</div>
+        <div id="copyright" class="footerText">© Copyright 2017</div>
+    </div>
+</div>
+
+<script>
+    Get("https://api.kraken.com/0/public/Ticker?pair=BTCEUR");
+</script>
+</body>
+</html>
